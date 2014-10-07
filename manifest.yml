@@ -3,7 +3,7 @@ applications:
 - name: carrera-mybot
   memory: 1024m
   instances: 1
-  host: spring-demo
+  host: bot01
   domain: beta.swisscloud.io
   path: target/carrera.mybot-1.0.war
   buildpack: https://github.com/cloudfoundry/java-buildpack

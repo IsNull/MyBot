@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- *
+ * REST API of the Bot
  * Created by P. Buettiker on 10/5/14.
  */
 @Controller
@@ -39,7 +39,6 @@ public class MyBotRestfulService {
     @RequestMapping(value = "sensor", method = RequestMethod.POST, consumes = "application/json")
     @ResponseBody
     public void handleSensorEvent(@RequestBody SensorEvent data) {
-
         myBotService.handleSensorEvent(data);
     }
 
